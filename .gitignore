@@ -1,6 +1,7 @@
 # Ignore build artifacts
 bin/
 obj/
+migrations/
 
 # Ignore Visual Studio-specific files
 .vs/

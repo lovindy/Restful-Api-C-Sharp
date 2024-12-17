@@ -1,4 +1,3 @@
-// Models/Product.cs
 using System;
 
 namespace MyRestApi.Models
@@ -11,5 +10,10 @@ namespace MyRestApi.Models
         public decimal Price { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+
+        // Foreign key for User
+        public int UserId { get; set; }
+        // Navigation property
+        public User User { get; set; }
     }
 }
